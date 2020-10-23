@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using UnityEngine.Video;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -15,16 +17,25 @@ public class PauseMenu : MonoBehaviour
     [Space(10)]
     public Slider MusicSlider;
     public float MusicVolume;
+    private float MusicVolumeF2;
     public AudioListener MusicSource;
+    public TextMeshProUGUI VolumeText;
 
     [Space(10)]
     public Slider MouseSlider;
     public FirstPersonAIO ControllerReference;
+    public TextMeshProUGUI SensitiveText;
 
     private void OnEnable()
     {
         MusicSlider.onValueChanged.AddListener(delegate { OnVolumeChanged(); });
         MouseSlider.onValueChanged.AddListener(delegate { OnSensitivityChanged(); });
+
+        AudioListener.volume = 0.2f;
+        MusicSlider.value = 0.2f;
+        MusicVolumeF2 = MusicSlider.value;
+        VolumeText.text = (MusicVolumeF2 * 100).ToString("F0") + "%";
+
     }
 
     // Update is called once per frame
@@ -71,11 +82,14 @@ public class PauseMenu : MonoBehaviour
 
     public void OnVolumeChanged()
     {
-        AudioListener.volume = MusicSlider.value;
+        AudioListener.volume = MusicSlider.value; //This value is confirmed changing in debug.
+        MusicVolumeF2 = MusicSlider.value;
+        VolumeText.text = (MusicVolumeF2 * 100).ToString("F0") + "%";
     }
 
     public void OnSensitivityChanged()
     {
         ControllerReference.mouseSensitivity = MouseSlider.value;
+        SensitiveText.text = MouseSlider.value + "";
     }
 }

@@ -37,11 +37,6 @@ public class Interactable : MonoBehaviour
         if (other.tag == "Player")
         {
             InteractableTextUI.gameObject.SetActive(true);
-
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                InteractionEvent.Invoke();
-            }
         }
     }
 
