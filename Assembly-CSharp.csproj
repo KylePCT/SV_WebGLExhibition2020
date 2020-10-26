@@ -8,7 +8,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{116A4137-F803-B01D-7970-81EC60E46CD1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -77,6 +78,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\TestingPunch.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanAudio.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSplineTrack.cs" />
+    <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\TestingZLegacy.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\TestingRigidbodyCS.cs" />
     <Compile Include="Assets\UI\UI_Pause\PauseMenu.cs" />
@@ -85,6 +87,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
+    <Compile Include="Assets\Scripts\UI_VersionNumber.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSplines.cs" />
@@ -92,36 +95,35 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
-    <Compile Include="Assets\Scripts\StartMenu.cs" />
-    <Compile Include="Assets\Scripts\UI_VersionNumber.cs" />
+    <Compile Include="Assets\Scripts\Rotate.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\_DownloadedAssets\FirstPersion AIO Pack\DemoScene\Working Materials\GlassBumpedDistort.shader" />
-     <None Include="Assets\_DownloadedAssets\FirstPersion AIO Pack\README.txt" />
-     <None Include="Assets\_DownloadedAssets\LeanTween\ReadMe.txt" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\_DownloadedAssets\LeanTween\License.txt" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\_DownloadedAssets\FirstPersion AIO Pack\DemoScene\Working Materials\GlassBumpedDistort.shader" />
+    <None Include="Assets\_DownloadedAssets\FirstPersion AIO Pack\README.txt" />
+    <None Include="Assets\_DownloadedAssets\LeanTween\ReadMe.txt" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\_DownloadedAssets\LeanTween\License.txt" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
+    <None Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\2dUnlitWithFade.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
+    <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2020.1.0f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
