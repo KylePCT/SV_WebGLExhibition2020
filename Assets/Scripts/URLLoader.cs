@@ -56,4 +56,9 @@ public class URLLoader : MonoBehaviour
     {
         Application.ExternalEval("window.open(\"https://www.ortec-group.com\",\"_blank\")");
     }
+
+    public void OpenTestPDF()
+    {
+        Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/test.pdf\",\"_blank\")");
+    }
 }
