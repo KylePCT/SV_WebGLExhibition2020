@@ -216,33 +216,33 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 15100}
     - Class: 114
-      Script: {instanceID: 15240}
+      Script: {instanceID: 15136}
     - Class: 114
-      Script: {instanceID: 15338}
+      Script: {instanceID: 15242}
     - Class: 114
-      Script: {instanceID: 15354}
+      Script: {instanceID: 15340}
     - Class: 114
-      Script: {instanceID: 15404}
+      Script: {instanceID: 15356}
     - Class: 114
-      Script: {instanceID: 15544}
+      Script: {instanceID: 15406}
     - Class: 114
-      Script: {instanceID: 15592}
+      Script: {instanceID: 15546}
     - Class: 114
-      Script: {instanceID: 15792}
+      Script: {instanceID: 15594}
     - Class: 114
       Script: {instanceID: 15794}
     - Class: 114
-      Script: {instanceID: 15824}
+      Script: {instanceID: 15796}
     - Class: 114
-      Script: {instanceID: 15852}
+      Script: {instanceID: 15826}
     - Class: 114
-      Script: {instanceID: 15888}
+      Script: {instanceID: 15854}
     - Class: 114
-      Script: {instanceID: 15986}
+      Script: {instanceID: 15890}
     - Class: 114
-      Script: {instanceID: 15994}
+      Script: {instanceID: 15988}
     - Class: 114
-      Script: {instanceID: 41920}
+      Script: {instanceID: 15996}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -1048,6 +1048,12 @@ ScriptsOnlyBuild:
     className: CinemachineUniversalPixelPerfect
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: UnityStandardAssets.Utility
+    className: FPSCounter
+  - hash:
+      serializedVersion: 2
       Hash: 61158ff022b6bd8dc2cf1ed656e49adb
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1292,12 +1298,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: UnityStandardAssets.Utility
-    className: FPSCounter
   platform: 20
   scenePathNames:
   - Assets/Scenes/Test_Scene_v1.unity
