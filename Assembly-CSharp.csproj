@@ -86,6 +86,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathBezier.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\FPSCounter.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\UI_VersionNumber.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanTweenExt.cs" />
@@ -95,7 +96,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
-    <Compile Include="Assets\Scripts\FPSCounter.cs" />
+    <Compile Include="Assets\Scripts\FeedbackCollector.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
