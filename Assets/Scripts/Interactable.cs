@@ -6,6 +6,9 @@ using TMPro;
 
 public class Interactable : MonoBehaviour
 {
+    public GameObject Player;
+    public bool ShowMouse = false;
+
     public UnityEvent InteractionEvent;
     public UnityEvent EndInteractionEvent;
 
@@ -45,6 +48,13 @@ public class Interactable : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             InteractionEvent.Invoke();
+
+            if (ShowMouse)
+            {
+                Player.GetComponent<FirstPersonAIO>().enabled = false;
+                Cursor.visible = true;
+                Cursor.lockState = CursorLockMode.None;
+            }
         }
     }
 
@@ -55,5 +65,12 @@ public class Interactable : MonoBehaviour
             InteractableTextUI.gameObject.SetActive(false);
             EndInteractionEvent.Invoke();
         }
+    }
+
+    public void ReenableMouse()
+    {
+        Player.GetComponent<FirstPersonAIO>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 }

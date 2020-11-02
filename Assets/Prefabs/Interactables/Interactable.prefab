@@ -56,6 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -80,6 +81,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5405589775006460524
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -152,10 +154,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f121df1dee50bc44281e8496a78d427d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Player: {fileID: 1622511882579774, guid: 2e62f5703e5f8d2488a5e1bc8433be41, type: 3}
+  ShowMouse: 0
   InteractionEvent:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5405589775006460527}
+        m_TargetAssemblyTypeName: 
         m_MethodName: set_material
         m_Mode: 2
         m_Arguments:
@@ -168,6 +173,7 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 5405589775950147056}
+        m_TargetAssemblyTypeName: 
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -243,14 +249,16 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: New Text
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 80d924e31fde01e4698b8a19a64818a9, type: 2}
+  m_sharedMaterial: {fileID: 6543769249235399386, guid: 80d924e31fde01e4698b8a19a64818a9,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -284,7 +292,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
-  m_characterSpacing: 0
+  m_characterSpacing: -9.8
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
