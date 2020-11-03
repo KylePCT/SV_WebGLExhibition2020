@@ -114,7 +114,7 @@ public class FeedbackCollector : MonoBehaviour
     //Google Forms: https://docs.google.com/forms/d/1hlwsPdgiLUvvBvLNxS9XryNlcNcX9glnPRk9bOFW4vQ/edit
     //Google Sheets: https://docs.google.com/spreadsheets/d/1zc6l7nanYCEczPEjpO2TptdoA2FgE1PYYzzOkfPZRsc/edit#gid=1935086162
 
-    public GameObject name;
+    public new GameObject name;
     public GameObject queryField;
     public GameObject phone;
     public GameObject mail;

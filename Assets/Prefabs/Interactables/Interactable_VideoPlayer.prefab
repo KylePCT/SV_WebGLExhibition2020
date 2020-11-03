@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1324496598667497055}
   - component: {fileID: 1324496598667496995}
   - component: {fileID: 9037770607141465286}
+  - component: {fileID: 7530741135673317792}
   m_Layer: 0
   m_Name: Interactable_VideoPlayer
   m_TagString: Untagged
@@ -129,6 +130,21 @@ MonoBehaviour:
         m_CallState: 2
   InteractableRadiusCollision: {fileID: 1324496598667496995}
   InteractableText: Press 'E' to Play
+--- !u!114 &7530741135673317792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1324496598667496994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54a1e1c3bd57e50408f857886be62643, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultFrameColour: {r: 0.09019608, g: 0.14117648, b: 0.1882353, a: 1}
+  videoFirstFrameStill: {fileID: 2800000, guid: 10008a651b84f674a8a7764cfe61dff8,
+    type: 3}
 --- !u!1 &1324496598709287313
 GameObject:
   m_ObjectHideFlags: 0
