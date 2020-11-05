@@ -56,6 +56,12 @@ public class Interactable : MonoBehaviour
                 Cursor.lockState = CursorLockMode.None;
             }
         }
+
+        if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying)
+        {
+            InteractableTextUI.text = InteractableText;
+            InteractableTextUI.gameObject.SetActive(false);
+        }
     }
 
     private void OnTriggerExit(Collider other)
@@ -73,4 +79,21 @@ public class Interactable : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void DisplayLoadingText()
+    {
+        if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>() != null)
+        {
+            if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying == false)
+            {
+                InteractableTextUI.SetText("Loading...");
+            }
+            else
+            {
+                InteractableTextUI.text = InteractableText;
+                InteractableTextUI.gameObject.SetActive(false);
+            }
+        }
+    }
+
 }

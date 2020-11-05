@@ -5,7 +5,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.IO;
 using System.Linq;
 using System.Text;
-
+using UnityEditor.Experimental.AssetImporters;
 using UnityEditor.Graphing;
 using UnityEditor.Graphing.Util;
 using UnityEditor.ShaderGraph.Internal;
@@ -13,8 +13,8 @@ using Object = System.Object;
 
 namespace UnityEditor.ShaderGraph
 {
-    [UnityEditor.AssetImporters.ScriptedImporter(31, Extension, 3)]
-    class ShaderGraphImporter : UnityEditor.AssetImporters.ScriptedImporter
+    [ScriptedImporter(31, Extension, 3)]
+    class ShaderGraphImporter : ScriptedImporter
     {
         public const string Extension = "shadergraph";
 
@@ -74,7 +74,7 @@ Shader ""Hidden/GraphErrorShader2""
             }
         }
 
-        public override void OnImportAsset(UnityEditor.AssetImporters.AssetImportContext ctx)
+        public override void OnImportAsset(AssetImportContext ctx)
         {
             var oldShader = AssetDatabase.LoadAssetAtPath<Shader>(ctx.assetPath);
             if (oldShader != null)
