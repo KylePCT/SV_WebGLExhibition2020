@@ -13,6 +13,7 @@ public class PauseMenu : MonoBehaviour
 
     public GameObject PauseScreen;
     public GameObject SettingsScreen;
+    public GameObject[] OtherScreens;
 
     [Space(10)]
     public Slider MusicSlider;
@@ -70,6 +71,12 @@ public class PauseMenu : MonoBehaviour
         IsPaused = true;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        foreach (GameObject screens in OtherScreens)
+        {
+            screens.SetActive(false);
+        }
+
         PauseScreen.SetActive(true);
     }
 

@@ -130,7 +130,6 @@ public class FeedbackCollector : MonoBehaviour
     [Space(10)]
     public GameObject MainCanvas;
     public GameObject ConfirmCanvas;
-    public GameObject ErrorCanvas;
     private bool isConfirmCanvasOn;
 
     private void OnEnable()

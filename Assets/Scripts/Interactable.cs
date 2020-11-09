@@ -57,10 +57,13 @@ public class Interactable : MonoBehaviour
             }
         }
 
-        if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying)
+        if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>() != null)
         {
-            InteractableTextUI.text = InteractableText;
-            InteractableTextUI.gameObject.SetActive(false);
+            if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying)
+            {
+                InteractableTextUI.text = InteractableText;
+                InteractableTextUI.gameObject.SetActive(false);
+            }
         }
     }
 
