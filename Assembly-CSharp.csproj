@@ -91,6 +91,7 @@
     <Compile Include="Assets\Scripts\GetSpecs.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\TestingZLegacyExt.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\UITextTypeWriter.cs" />
     <Compile Include="Assets\Scripts\FPSCounter.cs" />
     <Compile Include="Assets\Scripts\Interactable.cs" />
     <Compile Include="Assets\Scripts\UI_VersionNumber.cs" />
@@ -103,7 +104,8 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
     <Compile Include="Assets\Scripts\EnlargeMap.cs" />
-    <Compile Include="Assets\Scripts\UITextTypeWriter.cs" />
+    <Compile Include="Assets\Games\NumberBox.cs" />
+    <Compile Include="Assets\Games\Puzzle.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -719,6 +721,9 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

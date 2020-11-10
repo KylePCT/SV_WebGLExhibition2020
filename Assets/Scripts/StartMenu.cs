@@ -23,4 +23,18 @@ public class StartMenu : MonoBehaviour
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
     }
+
+    public void ShowMouse()
+    {
+        Player.GetComponent<FirstPersonAIO>().enabled = false;
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
+
+    public void DisableMouse()
+    {
+        Player.GetComponent<FirstPersonAIO>().enabled = true;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+    }
 }
