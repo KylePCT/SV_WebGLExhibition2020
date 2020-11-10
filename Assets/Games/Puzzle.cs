@@ -15,20 +15,25 @@ public class Puzzle : MonoBehaviour
     public GameObject MainPuzzleBoard;
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI MoveCountText;
-    private float Timer;
-    private float MoveCount;
+    public GameObject WinningCanvas;
 
-    private float secondsCount;
-    private int minuteCount;
-    private int hourCount;
+    [HideInInspector]
+    public float Timer;
+    [HideInInspector]
+    public float MoveCount;
+
+    [HideInInspector]
+    public float secondsCount;
+    [HideInInspector]
+    public int minuteCount;
 
     //Start is called before the first frame update.
     void Start()
     {
         Init();
 
-        Timer = 0f;
-        MoveCount = 0f;
+        Timer = 0;
+        MoveCount = 0;
 
         for (int i = 0; i < ShuffleAmount; i++)
         {
@@ -96,19 +101,17 @@ public class Puzzle : MonoBehaviour
 
     public void UpdateTimerUI()
     {
-        //Set timer UI.
-        secondsCount += Time.deltaTime;
-        TimerText.SetText("Timer: " + hourCount + "h " + minuteCount.ToString("00") + "m " + ((int)secondsCount).ToString("00") + "s");
+        if (MainPuzzleBoard.activeSelf)
+        {
+            //Set timer UI.
+            secondsCount += Time.deltaTime;
+            TimerText.SetText("Timer: " + minuteCount.ToString("00") + "m " + ((int)secondsCount).ToString("00") + "s");
 
-        if (secondsCount >= 60)
-        {
-            minuteCount++;
-            secondsCount = 0;
-        }
-        else if (minuteCount >= 60)
-        {
-            hourCount++;
-            minuteCount = 0;
+            if (secondsCount >= 60)
+            {
+                minuteCount++;
+                secondsCount = 0;
+            }
         }
     }
 
@@ -125,6 +128,7 @@ public class Puzzle : MonoBehaviour
             }
         }
 
+        WinningCanvas.SetActive(true);
         Debug.Log("Victory!");
     }
 
