@@ -99,6 +99,20 @@ public class Puzzle : MonoBehaviour
 
     }
 
+    public void Restart()
+    {
+        Timer = 0;
+        minuteCount = 0;
+        secondsCount = 0;
+
+        MoveCount = 0;
+
+        for (int i = 0; i < ShuffleAmount; i++)
+        {
+            Shuffle();
+        }
+    }
+
     public void UpdateTimerUI()
     {
         if (MainPuzzleBoard.activeSelf)

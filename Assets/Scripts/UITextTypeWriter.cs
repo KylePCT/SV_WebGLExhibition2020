@@ -11,13 +11,12 @@ public class UITextTypeWriter : MonoBehaviour
 	TextMeshProUGUI txt;
     string story;
 
-    void Awake()
+    public void StartText()
     {
         txt = GetComponent<TextMeshProUGUI>();
         story = txt.text;
         txt.text = "";
 
-        // TODO: add optional delay when to start
         StartCoroutine("PlayText");
     }
 
@@ -26,7 +25,7 @@ public class UITextTypeWriter : MonoBehaviour
         foreach (char c in story)
         {
             txt.text += c;
-            yield return new WaitForSeconds(0.125f);
+            yield return new WaitForSeconds(0.02f);
         }
     }
 

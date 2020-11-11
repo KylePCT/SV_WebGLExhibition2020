@@ -60,6 +60,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\TestingUnitTests.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathBezier2d.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSpline2d.cs" />
+    <Compile Include="Assets\Games\Leaderboard.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralCameraShake.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralSimpleUI.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSpline.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanSmooth.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSplinePerformance.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanTest.cs" />
+    <Compile Include="Assets\Games\Winning.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanTween.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\TestingPunch.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanAudio.cs" />
@@ -101,14 +103,13 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LeanTweenExt.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescrOptional.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\PathSplines.cs" />
+    <Compile Include="Assets\Games\DisplayHighScores.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescr.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
     <Compile Include="Assets\Scripts\EnlargeMap.cs" />
-    <Compile Include="Assets\Games\Leaderboard.cs" />
-    <Compile Include="Assets\Games\DisplayHighScores.cs" />
-    <Compile Include="Assets\Games\Winning.cs" />
+    <Compile Include="Assets\Scripts\ShowSpeechOnEntry.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />

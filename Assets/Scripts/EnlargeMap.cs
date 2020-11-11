@@ -8,6 +8,8 @@ public class EnlargeMap : MonoBehaviour
     public GameObject BigMapCanvas;
     public GameObject OrdinaryCanvas;
 
+    public GameObject[] OtherCanvases;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,18 @@ public class EnlargeMap : MonoBehaviour
             BigMapCanvas.SetActive(false);
             OrdinaryCanvas.SetActive(true);
         }
+
+        //If any of the specified other canvases are active, don't enforce the standard map to be visible.
+        for (int i = 0; i <= OtherCanvases.Length; i++)
+        {
+            if (OtherCanvases[i].activeSelf == true)
+            {
+                OrdinaryCanvas.SetActive(false);
+                return;
+            }
+
+            OrdinaryCanvas.SetActive(true);
+        }
+
     }
 }

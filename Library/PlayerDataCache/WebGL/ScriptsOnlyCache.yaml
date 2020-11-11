@@ -14,6 +14,7 @@ ScriptsOnlyBuild:
     - PauseMenu
     - Puzzle
     - Rotate
+    - ShowSpeechOnEntry
     - StartMenu
     - UITextTypeWriter
     - UI_VersionNumber
@@ -68,10 +69,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -179,113 +178,115 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12542}
     - Class: 114
-      Script: {instanceID: 12724}
+      Script: {instanceID: 12652}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12726}
     - Class: 114
-      Script: {instanceID: 13012}
+      Script: {instanceID: 12902}
     - Class: 114
-      Script: {instanceID: 13058}
+      Script: {instanceID: 13014}
     - Class: 114
-      Script: {instanceID: 13174}
+      Script: {instanceID: 13060}
     - Class: 114
-      Script: {instanceID: 13302}
+      Script: {instanceID: 13176}
     - Class: 114
-      Script: {instanceID: 13310}
+      Script: {instanceID: 13304}
     - Class: 114
-      Script: {instanceID: 13380}
+      Script: {instanceID: 13312}
     - Class: 114
-      Script: {instanceID: 13436}
+      Script: {instanceID: 13382}
     - Class: 114
-      Script: {instanceID: 13668}
+      Script: {instanceID: 13438}
     - Class: 114
-      Script: {instanceID: 13710}
+      Script: {instanceID: 13670}
     - Class: 114
-      Script: {instanceID: 13772}
+      Script: {instanceID: 13712}
     - Class: 114
-      Script: {instanceID: 13886}
+      Script: {instanceID: 13764}
     - Class: 114
-      Script: {instanceID: 13980}
+      Script: {instanceID: 13776}
     - Class: 114
-      Script: {instanceID: 14102}
+      Script: {instanceID: 13890}
     - Class: 114
-      Script: {instanceID: 14226}
+      Script: {instanceID: 13984}
     - Class: 114
-      Script: {instanceID: 14240}
+      Script: {instanceID: 14106}
     - Class: 114
-      Script: {instanceID: 14350}
+      Script: {instanceID: 14230}
     - Class: 114
-      Script: {instanceID: 14536}
+      Script: {instanceID: 14244}
     - Class: 114
-      Script: {instanceID: 14574}
+      Script: {instanceID: 14354}
     - Class: 114
-      Script: {instanceID: 14608}
+      Script: {instanceID: 14540}
+    - Class: 114
+      Script: {instanceID: 14578}
     - Class: 114
       Script: {instanceID: 14612}
     - Class: 114
-      Script: {instanceID: 14630}
+      Script: {instanceID: 14616}
     - Class: 114
-      Script: {instanceID: 14638}
+      Script: {instanceID: 14634}
     - Class: 114
-      Script: {instanceID: 14654}
+      Script: {instanceID: 14642}
     - Class: 114
-      Script: {instanceID: 14730}
+      Script: {instanceID: 14658}
     - Class: 114
-      Script: {instanceID: 14772}
+      Script: {instanceID: 14734}
     - Class: 114
-      Script: {instanceID: 14810}
+      Script: {instanceID: 14776}
     - Class: 114
-      Script: {instanceID: 14818}
+      Script: {instanceID: 14814}
     - Class: 114
-      Script: {instanceID: 14852}
+      Script: {instanceID: 14822}
     - Class: 114
-      Script: {instanceID: 14978}
+      Script: {instanceID: 14856}
     - Class: 114
-      Script: {instanceID: 15040}
+      Script: {instanceID: 14982}
     - Class: 114
-      Script: {instanceID: 15140}
+      Script: {instanceID: 15044}
     - Class: 114
       Script: {instanceID: 15144}
     - Class: 114
-      Script: {instanceID: 15214}
+      Script: {instanceID: 15148}
     - Class: 114
-      Script: {instanceID: 15250}
+      Script: {instanceID: 15218}
     - Class: 114
-      Script: {instanceID: 15362}
+      Script: {instanceID: 15254}
     - Class: 114
-      Script: {instanceID: 15474}
+      Script: {instanceID: 15366}
     - Class: 114
-      Script: {instanceID: 15490}
+      Script: {instanceID: 15478}
     - Class: 114
-      Script: {instanceID: 15540}
+      Script: {instanceID: 15494}
     - Class: 114
-      Script: {instanceID: 15614}
+      Script: {instanceID: 15544}
     - Class: 114
-      Script: {instanceID: 15682}
+      Script: {instanceID: 15618}
     - Class: 114
-      Script: {instanceID: 15728}
+      Script: {instanceID: 15686}
     - Class: 114
-      Script: {instanceID: 15930}
+      Script: {instanceID: 15732}
     - Class: 114
-      Script: {instanceID: 15932}
+      Script: {instanceID: 15826}
     - Class: 114
-      Script: {instanceID: 15964}
+      Script: {instanceID: 15936}
     - Class: 114
-      Script: {instanceID: 15992}
+      Script: {instanceID: 15938}
     - Class: 114
-      Script: {instanceID: 16028}
+      Script: {instanceID: 15970}
     - Class: 114
-      Script: {instanceID: 16070}
+      Script: {instanceID: 15998}
     - Class: 114
-      Script: {instanceID: 16128}
+      Script: {instanceID: 16034}
+    - Class: 114
+      Script: {instanceID: 16064}
+    - Class: 114
+      Script: {instanceID: 16078}
     - Class: 114
       Script: {instanceID: 16136}
     - Class: 114
-      Script: {instanceID: 36362}
-    - Class: 114
-      Script: {instanceID: 111016}
-    - Class: 114
-      Script: {instanceID: 463014}
+      Script: {instanceID: 16144}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -562,6 +563,12 @@ ScriptsOnlyBuild:
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
+    className: Leaderboard
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
     className: GeneralCameraShake
   - hash:
       serializedVersion: 2
@@ -773,6 +780,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering.UI
     className: DebugUIHandlerGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 6c5675cd60ad91cb40fe1a8bc38d7482
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Winning
   - hash:
       serializedVersion: 2
       Hash: 040dd48e3a027d5424519a5fa2009df4
@@ -1243,6 +1256,12 @@ ScriptsOnlyBuild:
     className: BaseInput
   - hash:
       serializedVersion: 2
+      Hash: 8e6cb6c985fd7a348bee23c43dfb1f85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DisplayHighScores
+  - hash:
+      serializedVersion: 2
       Hash: 505d135987a40b183e97f89c9c82d9e6
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
@@ -1345,13 +1364,19 @@ ScriptsOnlyBuild:
     className: Light2D
   - hash:
       serializedVersion: 2
+      Hash: fcf229f9ad1dfb3291049d055829e120
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShowSpeechOnEntry
+  - hash:
+      serializedVersion: 2
       Hash: 6a6b62ad42f0c97f3b8565ebc273ad24
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: OldGUIExamplesCS
   - hash:
       serializedVersion: 2
-      Hash: 1fdc115bbca63675df22d969cecfc3dd
+      Hash: 769422d1451b836b8fe1849ec3180daf
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: EnlargeMap
@@ -1391,24 +1416,6 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Leaderboard
-  - hash:
-      serializedVersion: 2
-      Hash: 8e6cb6c985fd7a348bee23c43dfb1f85
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DisplayHighScores
-  - hash:
-      serializedVersion: 2
-      Hash: 6c5675cd60ad91cb40fe1a8bc38d7482
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Winning
   platform: 20
   scenePathNames:
   - Assets/Scenes/Test_Scene_v1.unity
