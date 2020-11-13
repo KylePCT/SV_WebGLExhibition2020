@@ -31,12 +31,12 @@ public class EnlargeMap : MonoBehaviour
         }
 
         //If any of the specified other canvases are active, don't enforce the standard map to be visible.
-        for (int i = 0; i <= OtherCanvases.Length; i++)
+        for (int i = 0; i < OtherCanvases.Length; i++)
         {
-            if (OtherCanvases[i].activeSelf == true)
+            if (OtherCanvases[i].activeInHierarchy == true)
             {
                 OrdinaryCanvas.SetActive(false);
-                return;
+                break;
             }
 
             OrdinaryCanvas.SetActive(true);

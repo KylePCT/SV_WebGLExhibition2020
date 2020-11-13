@@ -5,7 +5,9 @@ using System.Runtime.InteropServices;
 
 public class URLLoader : MonoBehaviour
 {
-    //Can't call a public string url here because it doesnt like it, so needs a different call for each URL.
+    //Can't call a public string url here because WebGL doesnt like it, so needs a different call for each URL.
+    //Atleast they are public methods that can be attached to buttons and events, just a little tedious. Sorry future person.
+
     public void OpenSonovisionHomeURL()
     {
         Application.ExternalEval("window.open(\"https://www.sonovision.co.uk\",\"_blank\")");
@@ -60,5 +62,25 @@ public class URLLoader : MonoBehaviour
     public void OpenTestPDF()
     {
         Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/test.pdf\",\"_blank\")");
+    }
+
+    public void OpenCaseStudyAirbus()
+    {
+        Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/CS_AirbusGSE.pdf\",\"_blank\")");
+    }
+
+    public void OpenCaseStudyCapability()
+    {
+        Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/CS_Capability.pdf\",\"_blank\")");
+    }
+
+    public void OpenCaseStudyKnorr()
+    {
+        Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/CS_Knorr.pdf\",\"_blank\")");
+    }
+
+    public void OpenCaseStudyRemoteVR()
+    {
+        Application.ExternalEval("window.open(\"https://www.sonovision.co.uk/unity/CS_RemoteVR.pdf\",\"_blank\")");
     }
 }

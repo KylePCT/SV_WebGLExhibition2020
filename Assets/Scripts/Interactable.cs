@@ -15,6 +15,8 @@ public class Interactable : MonoBehaviour
     public SphereCollider InteractableRadiusCollision;
     private GameObject InteractableObject;
 
+    private bool HasText;
+
     [SerializeField]
     private string InteractableText;
     public string InteractionText //Set for accessors.
@@ -30,16 +32,27 @@ public class Interactable : MonoBehaviour
     {
         InteractableObject = this.gameObject;
 
-        InteractableTextUI = GetComponentInChildren<TextMeshProUGUI>();
-        InteractableTextUI.text = InteractableText;
-        InteractableTextUI.gameObject.SetActive(false);
+        if (this.gameObject.GetComponentInChildren<TextMeshProUGUI>())
+        {
+            HasText = true;
+            InteractableTextUI = GetComponentInChildren<TextMeshProUGUI>();
+            InteractableTextUI.text = InteractableText;
+            InteractableTextUI.gameObject.SetActive(false);
+        }
+        else
+        {
+            HasText = false;
+        }
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            InteractableTextUI.gameObject.SetActive(true);
+            if (HasText)
+            {
+                InteractableTextUI.gameObject.SetActive(true);
+            }
         }
     }
 
@@ -71,8 +84,12 @@ public class Interactable : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            InteractableTextUI.gameObject.SetActive(false);
             EndInteractionEvent.Invoke();
+
+            if (HasText)
+            {
+                InteractableTextUI.gameObject.SetActive(false);
+            }
         }
     }
 
@@ -87,7 +104,7 @@ public class Interactable : MonoBehaviour
     {
         if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>() != null)
         {
-            if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying == false)
+            if (InteractableObject.GetComponentInChildren<UnityEngine.Video.VideoPlayer>().isPlaying == false && HasText)
             {
                 InteractableTextUI.SetText("Loading...");
             }

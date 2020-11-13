@@ -107,9 +107,9 @@
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralUISpace.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Scripts\GeneralEventsListeners.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Framework\LTDescr.cs" />
+    <Compile Include="Assets\Scripts\ShowSpeechOnEntry.cs" />
     <Compile Include="Assets\_DownloadedAssets\LeanTween\Examples\Archived\OldGUIExamplesCS.cs" />
     <Compile Include="Assets\Scripts\EnlargeMap.cs" />
-    <Compile Include="Assets\Scripts\ShowSpeechOnEntry.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\_DownloadedAssets\TextMesh Pro\Shaders\TMPro.cginc" />

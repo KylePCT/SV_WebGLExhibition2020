@@ -18,7 +18,7 @@ public class NumberBox : MonoBehaviour
 
     public bool isEmpty()
     {
-        return index == 16;
+        return index == 9;
     }
 
     public void Init(int i, int j, int index, Sprite sprite, Action<int, int> swapFunc)

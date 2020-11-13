@@ -34,6 +34,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: -0.002489859
       objectReference: {fileID: 0}
+    - target: {fileID: 3138381219908453945, guid: fa727878a8d7dc446a5281138aaa37b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Minimap
+      objectReference: {fileID: 0}
     - target: {fileID: 5405589775756319289, guid: fa727878a8d7dc446a5281138aaa37b6,
         type: 3}
       propertyPath: InteractionEvent.m_PersistentCalls.m_Calls.Array.size
@@ -163,6 +168,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Camera
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405589776396024439, guid: fa727878a8d7dc446a5281138aaa37b6,
+        type: 3}
+      propertyPath: m_Name
+      value: Canvas_Content
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808138048751659582, guid: fa727878a8d7dc446a5281138aaa37b6,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 13.301876
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808138048751659582, guid: fa727878a8d7dc446a5281138aaa37b6,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 13.301871
+      objectReference: {fileID: 0}
+    - target: {fileID: 7808138048751659582, guid: fa727878a8d7dc446a5281138aaa37b6,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 13.301871
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fa727878a8d7dc446a5281138aaa37b6, type: 3}

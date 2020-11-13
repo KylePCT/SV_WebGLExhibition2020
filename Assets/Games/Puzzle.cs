@@ -6,12 +6,13 @@ using TMPro;
 public class Puzzle : MonoBehaviour
 {
     public NumberBox boxPrefab;
-    public NumberBox[,] boxes = new NumberBox[4, 4];
+    public NumberBox[,] boxes = new NumberBox[3, 3];
     public Sprite[] sprites;
     public int ShuffleAmount;
 
     [Space(10)]
 
+    public GameObject MainPuzzleHolderCanvas;
     public GameObject MainPuzzleBoard;
     public TextMeshProUGUI TimerText;
     public TextMeshProUGUI MoveCountText;
@@ -51,9 +52,9 @@ public class Puzzle : MonoBehaviour
     void Init()
     {
         int n = 0;
-        for (int y = 3; y >= 0; y--)
+        for (int y = 2; y >= 0; y--)
         {
-            for (int x = 0; x < 4; x++)
+            for (int x = 0; x < 3; x++)
             {
                 NumberBox box = Instantiate(boxPrefab, new Vector2(x, y), Quaternion.identity);
 
@@ -131,9 +132,9 @@ public class Puzzle : MonoBehaviour
 
     void TestIfWon()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 4; j++)
+            for (int j = 0; j < 3; j++)
             {
                 if (boxes[i, j].CurrentBoxPosition != boxes[i, j].CorrectBoxPosition)
                 {
@@ -143,6 +144,7 @@ public class Puzzle : MonoBehaviour
         }
 
         WinningCanvas.SetActive(true);
+        MainPuzzleHolderCanvas.SetActive(false);
         Debug.Log("Victory!");
     }
 
@@ -150,7 +152,7 @@ public class Puzzle : MonoBehaviour
     int getDx(int x, int y)
     {
         //Depends on the position of the empty -> is the right box empty?
-        if (x < 3 && boxes[x + 1, y].isEmpty()) //Prevent boundary overlap.
+        if (x < 2 && boxes[x + 1, y].isEmpty()) //Prevent boundary overlap.
         {
             return 1;
         }
@@ -167,7 +169,7 @@ public class Puzzle : MonoBehaviour
     int getDy(int x, int y)
     {
         //Depends on the position of the empty -> is the top box empty?
-        if (y < 3 && boxes[x, y + 1].isEmpty()) //Prevent boundary overlap.
+        if (y < 2 && boxes[x, y + 1].isEmpty()) //Prevent boundary overlap.
         {
             return 1;
         }
@@ -183,9 +185,9 @@ public class Puzzle : MonoBehaviour
 
     void Shuffle()
     {
-        for (int i = 0; i < 4; i++)
+        for (int i = 0; i < 3; i++)
         {
-            for (int j = 0; j < 4; j++)
+            for (int j = 0; j < 3; j++)
             {
                 boxes[i, j].CurrentBoxPosition = boxes[i, j].CorrectBoxPosition;
 
@@ -239,7 +241,7 @@ public class Puzzle : MonoBehaviour
 
     bool isValidRange(int n)
     {
-        return n >= 0 && n <= 3;
+        return n >= 0 && n <= 2;
     }
 
     bool isRepeatMove(Vector2 pos)

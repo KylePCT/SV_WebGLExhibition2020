@@ -842,7 +842,7 @@ ScriptsOnlyBuild:
     className: RemoteTestResultSender
   - hash:
       serializedVersion: 2
-      Hash: 31750a236a39e828dce1b200212d22d4
+      Hash: 6fcfbaa22dbdeacc872b744793e4fc2d
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Puzzle
