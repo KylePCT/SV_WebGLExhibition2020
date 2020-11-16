@@ -1415,7 +1415,6 @@ PrefabInstance:
       value: 'Welcome to the Sonovision Training Solutions Booth!
 
 
-
         Sonovisions
         range of training solutions is designed to meet the ever-changing needs of
         our customers user community. Our solutions are bespoke and aim to convey
@@ -1425,7 +1424,6 @@ PrefabInstance:
         to design and deliver the most appropriate solution from interactive e-learning
         through to the latest innovations in Extended Reality (XR), including Virtual
         and Augmented Realities.
-
 
 
         Why not take the time to view our latest
@@ -1439,12 +1437,12 @@ PrefabInstance:
     - target: {fileID: 5882356864479383003, guid: 8b77bd1769287f84b81359a86d2884df,
         type: 3}
       propertyPath: m_fontSize
-      value: 23
+      value: 23.9
       objectReference: {fileID: 0}
     - target: {fileID: 5882356864479383003, guid: 8b77bd1769287f84b81359a86d2884df,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 23
+      value: 23.9
       objectReference: {fileID: 0}
     - target: {fileID: 7192360270933842674, guid: 8b77bd1769287f84b81359a86d2884df,
         type: 3}
@@ -9058,16 +9056,17 @@ PrefabInstance:
     - target: {fileID: 5882356864479383003, guid: 8b77bd1769287f84b81359a86d2884df,
         type: 3}
       propertyPath: m_text
-      value: "Welcome to Sonovisions New Virtual Exhibition Booth!\r\n\r\nThanks
-        to TDWs Mike and Claire for enabling us showcase our services in a new innovative
-        format. We would have loved to meet you all in person, but due current national
-        restrictions, this has not been possible. However, it has encouraged us to
-        think outside the box and apply our existing gamification capabilities; something
-        that we would normally use for Training / E-Learning engagement, has now
-        been adapted to host a virtual experience for you to explore. \r\n\r\nWhy
-        not take the time to view our comprehensive portfolio and understand how
-        we can meet your documentation needs.\r\n\rYou can also contact us directly
-        using the console in the centre of the exhibition hall. Have fun!\r\n"
+      value: "Welcome to Sonovision`s New Virtual Exhibition Booth!\r\n\r\nThanks
+        to TDW`s Mike and Claire for enabling us to showcase our services in a new
+        innovative format. We would have loved to meet you all in person, but due
+        to current national restrictions, this has not been possible. However, it
+        has encouraged us to think outside the box and apply our existing gamification
+        capabilities; something that we would normally use for Training / E-Learning
+        engagement, has now been adapted to host a virtual experience for you to
+        explore. \r\n\r\nWhy not take the time to view our comprehensive portfolio
+        and understand how we can meet your documentation needs.\r\n\rYou can also
+        contact us directly using the console in the centre of the exhibition hall.
+        Have fun!\r\n"
       objectReference: {fileID: 0}
     - target: {fileID: 5882356864479383003, guid: 8b77bd1769287f84b81359a86d2884df,
         type: 3}
@@ -38228,6 +38227,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1155686745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1155686747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f0de21dcc3004ad4b9e4d0f6eb5b1dd3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1155686745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1155686748
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155686747}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.95, y: 3.56, z: 4.17}
+  m_Center: {x: 0.39, y: 0, z: 0}
 --- !u!1 &1157625872
 GameObject:
   m_ObjectHideFlags: 0

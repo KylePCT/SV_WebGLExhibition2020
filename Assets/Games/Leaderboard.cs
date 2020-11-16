@@ -8,7 +8,7 @@ public class Leaderboard : MonoBehaviour
 
     const string privateCode = "2ffda6i6wkCElK-Db3ZStAT-VFD_Hh_UyFQxCe-aOb8g";
     const string publicCode = "5faa9784eb371a09c4d40bd2";
-    const string webURL = "http://dreamlo.com/lb/";
+    const string webURL = "https://www.dreamlo.com/lb/";
 
     static Leaderboard instance;
 

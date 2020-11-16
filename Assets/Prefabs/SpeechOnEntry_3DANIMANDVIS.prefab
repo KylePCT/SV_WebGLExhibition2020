@@ -182,7 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5609727678249771302}
   - component: {fileID: 5609727678249771300}
-  - component: {fileID: 5609727678249771301}
+  - component: {fileID: 4042462516015863835}
   m_Layer: 0
   m_Name: Canvas_SpeechCol
   m_TagString: Untagged
@@ -222,7 +222,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 4.78, y: 5.57, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5609727678249771301
+--- !u!114 &4042462516015863835
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -234,8 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cd76caf1a779ec46b004eb2d37e0ee4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StandSpeechBubble: {fileID: 5609727678103819729}
-  UITextCoroutine: {fileID: 4471398894770326600}
+  StandSpeechBubble: {fileID: 5609727679417507958}
 --- !u!1 &5609727678407478649
 GameObject:
   m_ObjectHideFlags: 0
@@ -459,6 +458,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5609727678720453513}
+  - component: {fileID: 2389449528470333803}
   m_Layer: 0
   m_Name: SpeechOnEntry_3DANIMANDVIS
   m_TagString: Untagged
@@ -482,6 +482,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2389449528470333803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5609727678720453514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92d4838896bf182469ad2b6a265d2c1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5609727679417507958
 GameObject:
   m_ObjectHideFlags: 0
@@ -679,7 +691,6 @@ GameObject:
   - component: {fileID: 7119662119681241999}
   - component: {fileID: 6379023041266298659}
   - component: {fileID: 5882356864479383003}
-  - component: {fileID: 4471398894770326600}
   m_Layer: 0
   m_Name: Text_PersonTalking
   m_TagString: Untagged
@@ -812,18 +823,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4471398894770326600
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6104331423952880971}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 77ff073c421d7074f8170ca26eb5046d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6662046790207920335
 GameObject:
   m_ObjectHideFlags: 0

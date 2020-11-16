@@ -15,8 +15,8 @@ ScriptsOnlyBuild:
     - Puzzle
     - Rotate
     - ShowSpeechOnEntry
+    - SpaceToClose
     - StartMenu
-    - UITextTypeWriter
     - UI_VersionNumber
     - URLLoader
     - UnityStandardAssets.Utility.FPSCounter
@@ -212,81 +212,81 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 14106}
     - Class: 114
-      Script: {instanceID: 14230}
+      Script: {instanceID: 14168}
     - Class: 114
-      Script: {instanceID: 14244}
+      Script: {instanceID: 14232}
     - Class: 114
-      Script: {instanceID: 14354}
+      Script: {instanceID: 14246}
     - Class: 114
-      Script: {instanceID: 14540}
+      Script: {instanceID: 14356}
     - Class: 114
-      Script: {instanceID: 14578}
+      Script: {instanceID: 14542}
     - Class: 114
-      Script: {instanceID: 14612}
+      Script: {instanceID: 14580}
     - Class: 114
-      Script: {instanceID: 14616}
+      Script: {instanceID: 14614}
     - Class: 114
-      Script: {instanceID: 14634}
+      Script: {instanceID: 14618}
     - Class: 114
-      Script: {instanceID: 14642}
+      Script: {instanceID: 14636}
     - Class: 114
-      Script: {instanceID: 14658}
+      Script: {instanceID: 14644}
     - Class: 114
-      Script: {instanceID: 14734}
+      Script: {instanceID: 14660}
     - Class: 114
-      Script: {instanceID: 14776}
+      Script: {instanceID: 14736}
     - Class: 114
-      Script: {instanceID: 14814}
+      Script: {instanceID: 14778}
     - Class: 114
-      Script: {instanceID: 14822}
+      Script: {instanceID: 14816}
     - Class: 114
-      Script: {instanceID: 14856}
+      Script: {instanceID: 14824}
     - Class: 114
-      Script: {instanceID: 14982}
+      Script: {instanceID: 14858}
     - Class: 114
-      Script: {instanceID: 15044}
+      Script: {instanceID: 14984}
     - Class: 114
-      Script: {instanceID: 15144}
+      Script: {instanceID: 15046}
     - Class: 114
-      Script: {instanceID: 15148}
+      Script: {instanceID: 15150}
     - Class: 114
-      Script: {instanceID: 15218}
+      Script: {instanceID: 15220}
     - Class: 114
-      Script: {instanceID: 15254}
+      Script: {instanceID: 15256}
     - Class: 114
-      Script: {instanceID: 15366}
+      Script: {instanceID: 15368}
     - Class: 114
-      Script: {instanceID: 15478}
+      Script: {instanceID: 15480}
     - Class: 114
-      Script: {instanceID: 15494}
+      Script: {instanceID: 15496}
     - Class: 114
-      Script: {instanceID: 15544}
+      Script: {instanceID: 15546}
     - Class: 114
-      Script: {instanceID: 15618}
+      Script: {instanceID: 15620}
     - Class: 114
-      Script: {instanceID: 15686}
+      Script: {instanceID: 15688}
     - Class: 114
-      Script: {instanceID: 15732}
+      Script: {instanceID: 15734}
     - Class: 114
-      Script: {instanceID: 15826}
-    - Class: 114
-      Script: {instanceID: 15936}
+      Script: {instanceID: 15828}
     - Class: 114
       Script: {instanceID: 15938}
     - Class: 114
-      Script: {instanceID: 15970}
+      Script: {instanceID: 15940}
     - Class: 114
-      Script: {instanceID: 15998}
+      Script: {instanceID: 15972}
     - Class: 114
-      Script: {instanceID: 16034}
+      Script: {instanceID: 16000}
     - Class: 114
-      Script: {instanceID: 16064}
+      Script: {instanceID: 16036}
     - Class: 114
-      Script: {instanceID: 16078}
+      Script: {instanceID: 16066}
     - Class: 114
-      Script: {instanceID: 16136}
+      Script: {instanceID: 16080}
     - Class: 114
-      Script: {instanceID: 16144}
+      Script: {instanceID: 16138}
+    - Class: 114
+      Script: {instanceID: 16146}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -854,6 +854,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SpaceToClose
+  - hash:
+      serializedVersion: 2
       Hash: 4d51d5ccf37d2089bdfe827617b784ff
     assemblyName: Unity.RenderPipelines.Core.Runtime.dll
     namespaceName: UnityEngine.Rendering
@@ -1364,7 +1370,7 @@ ScriptsOnlyBuild:
     className: Light2D
   - hash:
       serializedVersion: 2
-      Hash: fcf229f9ad1dfb3291049d055829e120
+      Hash: 79c2a8f8ad783238d8d6151fa241fcde
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: ShowSpeechOnEntry

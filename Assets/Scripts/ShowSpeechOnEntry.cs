@@ -7,8 +7,6 @@ public class ShowSpeechOnEntry : MonoBehaviour
     private BoxCollider StandCollider;
     public GameObject StandSpeechBubble;
 
-    public UITextTypeWriter UITextCoroutine;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +17,6 @@ public class ShowSpeechOnEntry : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         StandSpeechBubble.SetActive(true);
-        UITextCoroutine.StartText();
     }
 
     private void OnTriggerExit(Collider other)
