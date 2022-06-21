@@ -7,3 +7,4 @@ An online WebGL exhibition for Sonovision UK. This involves speech bubbles, a ga
 - Implement a 3D environment with working stalls the player can go to.
 - Implement screens for videos within Unity that also work in a WebGL environment.
 - Experiment with CAD and introduce low-poly models into the environment for demonstration.
+- Integrate a sliding puzzle game with hi-score board for visitors to play.
